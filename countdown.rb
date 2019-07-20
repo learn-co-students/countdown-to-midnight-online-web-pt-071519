@@ -1,12 +1,16 @@
-countdown = 10 
-while countdown <= 10 do 
-  puts "#{countdown} SECOND(S)!"
-  countdown -= 1 
-if countdown == 0
-    break
+def countdown(seconds_to_midnight)
+  while seconds_to_midnight > 0 do
+    puts "#{seconds_to_midnight} SECOND(S)!"
+    seconds_to_midnight -= 1 
+  end
+  return "HAPPY NEW YEAR!"
 end
-end
-def countdown
-  x == 0
-puts "HAPPY NEW YEAR!"
+
+def countdown_with_sleep(second)
+  while second > 0 do 
+    puts "#{second} SECOND(S)!"
+    sleep(1) 
+    second -= 1 
+  end 
+  return "HAPPY NEW YEAR!"
 end
